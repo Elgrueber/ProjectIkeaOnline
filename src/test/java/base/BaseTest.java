@@ -15,7 +15,7 @@ public abstract class BaseTest {
         return driver;
     }
     protected void loginWeb() {
-        driver.get("");
+        driver.get("https://www.ikea.com/us/en/");
     }
 
     @BeforeClass
@@ -35,5 +35,4 @@ public abstract class BaseTest {
     protected  void afterTest() {
         getDriver().quit();
     }
-
 }
